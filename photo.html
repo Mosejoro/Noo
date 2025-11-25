@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Louisville  PROJECT</title>
+	<meta name="author" content="Anne Akinjiola" />
+	
+	<meta name="description" content="This  webpage is designed for Louisville project" />
+	<link rel="shortcut icon" href="mokola.jpg">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-food.css">
+	<link rel="stylesheet" href="project.css">
+	<link rel="stylesheet" href="fontawesome5/css/all.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	
+	<header id="theheader" class="w3-blue w3-container w3-padding-large">
+	
+	<img src="mokola.jfif" alt="" style="width: 75px; margin-right: 16px;" class="w3-left">
+		<h2 id="dtitle">LOUISVILLE NURSERY AND PRIMARY SCHOOL MOKOLA, IBADAN</h2>
+		<div id="dmotto">...DIEU LE VEULT</div>
+		
+		
+			<div class="w3-right w3-hide-small">
+		<a href="index.html" class="w3-green w3-hover-black w3-btn">Home</a>
+		<a href="contactus.html" class="w3-green w3-hover-black w3-btn">Contact Us</a>
+		<a href="team.html" class="w3-green w3-hover-black w3-btn"> Team</a>
+		<a href="photo.html" class="w3-green w3-hover-black w3-btn">Photo Gallery</a>
+		<a href="program.html" class="w3-green w3-hover-black w3-btn">Our Program</a>
+		
+			</div>	
+		
+		
+	</header>
+	
+
+<body>
+	
+	
+	<div id="dcarousel">
+	<div id="dcarousel_content" class="w3-display-container w3-hide-small">
+		
+		<div class="mySlides w3-display-container w3-animate-zoom" >
+			<img src="holy.jpg" alt="" class="slideimage">
+		  <h1 class="w3-display-middle w3-text-white">LOUISVILLE NURSERY AND PRIMARY SCHOOL MOKOLA IBADAN</h1>
+			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Pillars of Character</div>
+		</div>
+
+		<div class="mySlides w3-display-container w3-animate-left">
+			<img src="feb.jpg" alt="" class="slideimage">
+		  <h1 class="w3-display-middle w3-text-white">In the classroom</h1>
+			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Pupils celebrating their teacher</div>
+		</div>
+
+		<div class="mySlides w3-display-container w3-animate-right">
+			<img src="prep.jpg" alt="" class="slideimage">
+		  <h1 class="w3-display-middle w3-text-white">At the Assembly</h1>
+			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Knowledge is power</div>
+		</div>
+		<button class="w3-button w3-display-left w3-yellow" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right w3-yellow" onclick="plusDivs(+1)">&#10095;</button>
+
+
+
+		<div id="dcarousel_indicators" class="w3-center w3-display-bottommiddle">
+			<span class="w3-badge demo w3-border" onclick="currentDiv(1)">&nbsp;</span>
+			<span class="w3-badge demo w3-border" onclick="currentDiv(2)">&nbsp;</span>
+			<span class="w3-badge demo w3-border" onclick="currentDiv(3)">&nbsp;</span>
+		</div>
+
+	
+	</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+	
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+	
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}	
+	
+	
+	
+	
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+	dots[slideIndex-1].className += " w3-white";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+</div>
+	<h2>Photo Gallery</h2>
+	
+	<section id="Headmistress" class="w3-row w3-pale-blue">
+		
+		<div style="width: 320px;" class="w3-col w3-mobile">
+		
+		<div>
+			<img src="pink.jpg" alt="" style="width: 100%">
+			
+			
+			</div>
+		
+		</div>
+		
+		
+		<div class="w3-rest w3-mobile">
+		<div class="w3-container w3-padding-large w3-padding-24">
+			<h3>Photo Speaks</h3>
+			<p>
+			We are committed to a literate society, where every child has access to holistic education, becomes a person of integrity and good leader, contributing immensely to development.</p><p>The focal points which underpinned all that we do are: FAITH, MORALS, ACADEMIC EXCELLENCE AND CHARITY.
+			</p>
+			
+			<a href="class.html" target="_blank">
+		    <button class="w3-button w3-blue w3-card-4">Read More &raquo;</button>
+			</a> 
+			</div>	
+			</div>
+	
+	</section>
+	
+	
+	<div id="photogallery">
+		<img src="HCA3.jpg" alt="">
+		<img src="culture.jpg" alt="">
+		<img src="carol.jpg" alt="">
+		<img src="mass.jpg" alt="">
+		<img src="dance.jpg" alt="">
+		<img src="star.jpg" alt="">
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+				
+	<div class="w3-center w3-sand">
+	<video width="450"  controls>
+  <source src="sports2.mp4" type="video/mp4">
+ 
+</video>
+</div>
+	
+			
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<footer class="w3-blue w3-margin-top w3-container
+	w3-padding-24 w3-display-container">
+	Copyright &copy; 2025<span class="w3-right"> Designed by Anne Akinjiola SSL</span></footer>
+		
+</body>
+</html>
