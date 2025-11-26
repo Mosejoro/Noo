@@ -12,163 +12,126 @@
 	<link rel="stylesheet" href="fontawesome5/css/all.css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-</head>
-
-
-	
-	<header id="theheader" class="w3-blue w3-container w3-padding-large">
-	
-	<img src="mokola.jfif" alt="" style="width: 75px; margin-right: 16px;" class="w3-left">
-		<h2 id="dtitle">LOUISVILLE NURSERY AND PRIMARY SCHOOL MOKOLA IBADAN</h2>
-		<div id="dmotto">...DIEU LE VEULT</div>
-		
-		
-		
-		<div class="w3-right w3-hide-small">
-			
-		<a href="index.html" class="w3-green w3-hover-black w3-btn">Home</a>
-			<a href="contactus.html" class="w3-green w3-hover-black w3-btn">Contact Us</a>
-		<a href="team.html" class="w3-green w3-hover-black w3-btn"> Team</a>
-		<a href="photo.html" class="w3-green w3-hover-black w3-btn">Photo Gallery</a>
-		<a href="program.html" class="w3-green w3-hover-black w3-btn">Our Program</a>
-		
-	</div>	
-		
-		
-		
-	</header>
-	
-	<body>
-		
-	
-		
-		<div id="dcarousel">
-	<div id="dcarousel_content" class="w3-display-container w3-hide-small">
-		
-		<div class="mySlides w3-display-container w3-animate-zoom" >
-			<img src="HCA2-edited.jpg" alt="" class="slideimage">
-		  <h1 class="w3-display-middle w3-text-white">The Pupils at the Assembly </h1>
-			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Academic Excellence</div>
-		</div>
-
-		<div class="mySlides w3-display-container w3-animate-left">
-			<img src="gunwa2.jpg" alt="" class="slideimage">
-		  <h1 class="w3-display-middle w3-text-white">Study Time</h1>
-			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Learning is power</div>
-		</div>
-
-		<div class="mySlides w3-display-container w3-animate-right">
-			<img src="star.jpg" alt="" class="slideimage">
-		  <h1 class="w3-display-middle w3-text-white">Morals</h1>
-			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Education</div>
-		</div>
-
-
-		<div class="mySlides w3-display-container w3-animate-zoom">
-			<img src="church2.jpg" alt="" class="slideimage">
-		  <h1 class="w3-display-middle w3-text-white">Faith</h1>
-			<div class="w3-display-bottomright w3-container w3-padding w3-black w3-xlarge">Prayer is the master key</div>
-		</div>
-
-		<button class="w3-button w3-display-left w3-yellow" onclick="plusDivs(-1)">&#10094;</button>
-		<button class="w3-button w3-display-right w3-yellow" onclick="plusDivs(+1)">&#10095;</button>
-
-
-
-		<div id="dcarousel_indicators" class="w3-center w3-display-bottommiddle">
-			<span class="w3-badge demo w3-border" onclick="currentDiv(1)">&nbsp;</span>
-			<span class="w3-badge demo w3-border" onclick="currentDiv(2)">&nbsp;</span>
-			<span class="w3-badge demo w3-border" onclick="currentDiv(3)">&nbsp;</span>
-		</div>
-
-	
-	</div>
-			
-			
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-	
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-	
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}	
-	
-	
-	
-	
-var slideIndex = 0;
-carousel();
-
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-	dots[slideIndex-1].className += " w3-white";
-  setTimeout(carousel, 5000); // Change image every 2 seconds
+	<script>
+function toggleMenu() {
+    var x = document.getElementById("navMenu");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
 }
 </script>
-</div>
-		
-<p>&nbsp;</p>	
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-		
-		<img src="HCA3.jpg" style="width:100%;">	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Salsa&display=swap" rel="stylesheet">
+</head>
+	<header id="theheader" class="w3-blue w3-container w3-padding-large">
+    <div class="w3-bar">
+        <img src="mokola.png" alt="Louisville Nursery and Primary School Logo" style="width: 75px;" class="w3-bar-item">
+        
+        <div class="w3-bar-item">
+            <h2 id="dtitle" class="w3-margin-0 w3-hide-small">LOUISVILLE NURSERY AND PRIMARY SCHOOL MOKOLA IBADAN</h2>
+            <div id="dmotto" class="w3-hide-small">...DIEU LE VEULT</div>
+        </div>
+        
+        <!-- Mobile menu button -->
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">
+            ☰
+        </a>
+    </div>
+    
+    <!-- Navigation menu -->
+    <div id="navMenu" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+        <a href="index.html" class="w3-bar-item w3-button w3-green w3-hover-black">Home</a>
+        <a href="contactus.html" class="w3-bar-item w3-button w3-green w3-hover-black">Contact Us</a>
+        <a href="team.html" class="w3-bar-item w3-button w3-green w3-hover-black">Team</a>
+        <a href="photo.html" class="w3-bar-item w3-button w3-green w3-hover-black">Photo Gallery</a>
+        <a href="program.html" class="w3-bar-item w3-button w3-green w3-hover-black">Our Program</a>
+    </div>
+    
+    <!-- Desktop navigation -->
+    <div class="w3-hide-small w3-margin-top">
+        <a href="index.html" class="w3-button w3-green w3-hover-black">Home</a>
+        <a href="contactus.html" class="w3-button w3-green w3-hover-black">Contact Us</a>
+        <a href="team.html" class="w3-button w3-green w3-hover-black">Team</a>
+        <a href="photo.html" class="w3-button w3-green w3-hover-black">Photo Gallery</a>
+        <a href="program.html" class="w3-button w3-green w3-hover-black">Our Program</a>
+    </div>
+</header>
+	<body>		
+	
+<div id="hero_carousel">
+    <div id="hero_carousel_content" class="w3-display-container  w3-blue">
+        
+        <!-- Slide 1 -->
+        <div class="hero_slide w3-display-container w3-animate-opacity">
+            <img src="HCA2-edited.jpg" alt="Pupils at Assembly" class="hero_slide_image" style="width:100%; height: auto; min-height: 300px; object-fit: cover;">
+            <div class="w3-display-middle w3-container w3-padding w3-center">
+                <h1 class="w3-text-white w3-large w3-xlarge-medium w3-jumbo-large" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">The Pupils at the Assembly</h1>
+            </div>
+            <div class="w3-display-bottomright w3-container w3-padding w3-black w3-opacity w3-medium w3-large-medium w3-xlarge-large">Academic Excellence</div>
+        </div>
 
-		
-		
-		<div class="w3-dark blue w3-margin w3-padding-large w3-card-2" style="width: 350px;">
+        <!-- Slide 2 -->
+        <div class="hero_slide w3-display-container w3-animate-opacity">
+            <img src="gunwa2.jpg" alt="Students studying" class="hero_slide_image" style="width:100%; height: auto; min-height: 300px; object-fit: cover;">
+            <div class="w3-display-middle w3-container w3-padding w3-center">
+                <h1 class="w3-text-white w3-large w3-xlarge-medium w3-jumbo-large" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Study Time</h1>
+            </div>
+            <div class="w3-display-bottomright w3-container w3-padding w3-black w3-opacity w3-medium w3-large-medium w3-xlarge-large">Learning is power</div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero_slide w3-display-container w3-animate-opacity">
+            <img src="star.jpg" alt="Moral education" class="hero_slide_image" style="width:100%; height: auto; min-height: 300px; object-fit: cover;">
+            <div class="w3-display-middle w3-container w3-padding w3-center">
+                <h1 class="w3-text-white w3-large w3-xlarge-medium w3-jumbo-large" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Morals</h1>
+            </div>
+            <div class="w3-display-bottomright w3-container w3-padding w3-black w3-opacity w3-medium w3-large-medium w3-xlarge-large">Education</div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="hero_slide w3-display-container w3-animate-opacity">
+            <img src="church2.jpg" alt="Faith and prayer" class="hero_slide_image" style="width:100%; height: auto; min-height: 300px; object-fit: cover;">
+            <div class="w3-display-middle w3-container w3-padding w3-center">
+                <h1 class="w3-text-white w3-large w3-xlarge-medium w3-jumbo-large" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">Faith</h1>
+            </div>
+            <div class="w3-display-bottomright w3-container w3-padding w3-black w3-opacity w3-medium w3-large-medium w3-xlarge-large">Prayer is the master key</div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button class="w3-button w3-display-left w3-yellow w3-hover-amber w3-padding-small w3-padding-medium" onclick="heroCarouselPrev()" style="opacity: 0.8;">&#10094;</button>
+        <button class="w3-button w3-display-right w3-yellow w3-hover-amber w3-padding-small w3-padding-medium" onclick="heroCarouselNext()" style="opacity: 0.8;">&#10095;</button>
+
+        <!-- Indicators -->
+        <div id="hero_carousel_indicators" class="w3-center w3-display-bottommiddle" style="margin-bottom: 16px;">
+            <span class="hero_indicator w3-badge w3-border w3-transparent w3-hover-white" onclick="heroCarouselGoTo(1)" style="cursor: pointer; padding: 8px;">&nbsp;</span>
+            <span class="hero_indicator w3-badge w3-border w3-transparent w3-hover-white" onclick="heroCarouselGoTo(2)" style="cursor: pointer; padding: 8px;">&nbsp;</span>
+            <span class="hero_indicator w3-badge w3-border w3-transparent w3-hover-white" onclick="heroCarouselGoTo(3)" style="cursor: pointer; padding: 8px;">&nbsp;</span>
+            <span class="hero_indicator w3-badge w3-border w3-transparent w3-hover-white" onclick="heroCarouselGoTo(4)" style="cursor: pointer; padding: 8px;">&nbsp;</span>
+        </div>
+    </div>
+</div><br>
+<div class="w3-dark w3-blue w3-margin w3-padding-small w3-card-6 w3-center w3-100">
+			<img src="HCA3.jpg" class="Mission">	
 	
 	<h1>Mission Statement</h1>
 	
 	We are a Catholic educational institution in Ibadan.
 			
 	We provide basic holistic education to all children of school age in collaboration with the Government and other stakeholders. We use Government policies, the national curriculum, the services of our highly qualified teachers with the aid of modern facilities and equipments to produce pupils who will be able to compete effectively in the rapidly advancing technological society.
-		
-		<a href="" class="w3-button w3-blue w3-block 
-		w3-margin-top w3-wide">Read More &raquo;</a>
-		
-		
+		<!-- <a href="" class="w3-button w3-blue w3-block 
+		w3-margin-top w3-wide">Read More &raquo;</a> -->		
 	</div>
 		
 		
-		<div id="accordion" class="w3-panel w3-padding-large">
+	<div id="louisville_accordion" class="w3-panel w3-padding-large">
 <h3 class="w3-bottombar w3-border-black"></h3>
 	
 <!--	START OF AN ITEM	-->
-<button onclick="showaccordion(event, 'Transformation')" class="accord_btn w3-button w3-block w3-white w3-left-align">VALUE STATEMENT <div class="accord_indicator fa fa-plus w3-right"></div></button>
-<div id="Transformation" class="accord_content w3-container w3-hide w3-pale-green w3-animate-top">
+<button onclick="showLouisvilleAccordion(event, 'louisville_transformation')" class="louisville_accord_btn w3-button w3-block w3-white w3-left-align">VALUE STATEMENT <div class="louisville_accord_indicator fa fa-plus w3-right"></div></button>
+<div id="louisville_transformation" class="louisville_accord_content w3-container w3-hide w3-pale-green w3-animate-top">
   <p>All the activities of the school are underpinned by the values of: DISCIPLINE// SELF-RELIANCE// ACADEMIC EXCELLENCE// RESPECT// MORALS// DILIGENCE.</p>
 	<p>&nbsp;</p>
 </div>
@@ -176,93 +139,29 @@ function carousel() {
 	
 	
 	
-<button onclick="showaccordion(event, 'Collaboration')" class="accord_btn w3-button w3-block w3-white w3-left-align">VISION STATEMENT <div class="accord_indicator fa fa-plus w3-right"></div></button>
-<div id="Collaboration" class="accord_content w3-container w3-hide w3-pale-green w3-animate-bottom">
+<button onclick="showLouisvilleAccordion(event, 'louisville_collaboration')" class="louisville_accord_btn w3-button w3-block w3-white w3-left-align">VISION STATEMENT <div class="louisville_accord_indicator fa fa-plus w3-right"></div></button>
+<div id="louisville_collaboration" class="louisville_accord_content w3-container w3-hide w3-pale-green w3-animate-bottom">
 	<p>We are committed to a literate society where every child has access to holistic education, becomes a person of integrity and good leader, contributing immensely to development.</p>
 	<p>&nbsp;</p>
 </div>
 			
-<button onclick="showaccordion(event, 'Leadership')" class="accord_btn w3-button w3-block w3-white w3-left-align">ORGANOGRAM OF LOUISVILLE <div class="accord_indicator fa fa-plus w3-right"></div></button>
-<div id="Leadership" class="accord_content w3-container w3-hide w3-pale-green w3-animate-left">
+<button onclick="showLouisvilleAccordion(event, 'louisville_leadership')" class="louisville_accord_btn w3-button w3-block w3-white w3-left-align">ORGANOGRAM OF LOUISVILLE <div class="louisville_accord_indicator fa fa-plus w3-right"></div></button>
+<div id="louisville_leadership" class="louisville_accord_content w3-container w3-hide w3-pale-green w3-animate-left">
   <p>PLT// Advisory Board// Management Team// Teachers// Utility// PTA// Prefects.</p>
 	<p>&nbsp;</p>
 </div>
 	
 	
 </div>
-	
-	
-
-
-<script>
-function showaccordion(evt, dcontent) {	
-	var i, accord_btns, accord_indicators, accord_contents;
-	var x = document.getElementById(dcontent);
-	var y = evt.currentTarget;
-	var z = y.firstElementChild;
-	
-  if (x.className.indexOf("w3-show") == -1) {
-	  accord_btns = document.getElementsByClassName("accord_btn");
-	  for (i = 0; i < accord_btns.length; i++) {
-    	accord_btns[i].className = accord_btns[i].className.replace("w3-teal", "w3-black");
-	  }
-	  accord_indicators = document.getElementsByClassName("accord_indicator");
-	  for (i = 0; i < accord_indicators.length; i++) {
-    	accord_indicators[i].className = accord_indicators[i].className.replace("fa-minus", "fa-plus");
-	  }
-	  accord_contents = document.getElementsByClassName("accord_content");
-	  for (i = 0; i < accord_contents.length; i++) {
-    	accord_contents[i].className = accord_contents[i].className.replace(" w3-show", "");
-	  }
-	  
-	  x.className += " w3-show";
-	  y.className = y.className.replace("w3-black", "w3-teal");
-	  z.className = z.className.replace("fa-plus", "fa-minus");
-  } else {
-	  x.className = x.className.replace(" w3-show", "");
-	  y.className = y.className.replace("w3-teal", "w3-black");
-	  z.className = z.className.replace("fa-minus", "fa-plus");
-  }
-}
-</script>
-		</div>
-		
-		
-<p>&nbsp;</p>	
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-	
-	
-		
-		
-		
-
-		
-		
-		
-		
-
-		
-		
-		
-		
 		<div class="w3-center w3-sand">
 	<video width="450"  controls>
   <source src="trans.mp4" type="video/mp4">
- 
 </video>
 </div>
-		
-		
-		
-		
-		<footer class="w3-blue" w3-margin-top w3-container
+<footer class="w3-blue" w3-margin-top w3-container
 	w3-padding-24 w3-display-container">
 	Copyright &copy; 2025<span class="w3-right"> Designed by Anne Akinjiola SSL</span></footer>
-		
+ <script src="script.js"></script>
 </body>
-	
-	
-	
-	
+
 </html>
