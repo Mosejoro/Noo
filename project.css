@@ -82,16 +82,14 @@ body {
 
 .team {
   width: 360px;
-  height: 450px;
+  /* height: 450px; */
   overflow: auto;
-  /* background-color: lightgray; */
+  background-color: lightgray;
   box-shadow: 2px 2px 15px 3px #aaa;
   margin: 7px 12px;
   display: inline-block;
-  .team {
-    background: linear-gradient(to bottom, white, #f0f4f8);
-    border-top: 4px solid #ffd700;
-  }
+  background: linear-gradient(to bottom, white, #f0f4f8);
+  border-top: 4px solid #ffd700;
 }
 
 .superior {
